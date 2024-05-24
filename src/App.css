@@ -25,17 +25,99 @@
 }
 
 input {
-  margin-top: 0px;
+  margin-top: -10px;
   height: 40px;
   border-radius: 20px;
   line-height: 40em;
   font-size: 1.5rem;
   padding-left: 20px;
   width: 200px;
+  margin-bottom: 50px;
 }
 
 h2 {
   font-family: "Mukta", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+b {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+p {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0px;
+  margin-bottom: -30px;
+  z-index: 1001;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  margin-bottom: -34px;
+  border-radius: 20px;
+}
+
+.section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png);
+  background-size: 1000px 100px;
+}
+
+.section .wave.wave1 {
+  animation: animate 15s linear infinite;
+  z-index: 1000;
+  opacity: 0.7;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.section .wave.wave2 {
+  animation: animate2 10s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.section .wave.wave3 {
+  animation: animate3 10s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
 }
