@@ -61,6 +61,12 @@ p {
   z-index: 1001;
 }
 
+.noDataFound {
+  font-size: 30px;
+  margin-top: 45px;
+  margin-bottom: 58px;
+}
+
 .section {
   position: relative;
   width: 100%;
